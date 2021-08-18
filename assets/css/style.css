@@ -24,9 +24,14 @@ html {
 #header {
   height: 46px;
   background-color: #000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 
 #nav {
+  display: inline-block;
 }
 
 #nav li {
@@ -72,7 +77,26 @@ html {
   padding: 0px 16px;
 }
 
+#header #search-header {
+  float: right;
+}
+
+#header #search-header .search-icon {
+  color: #fff;
+  font-size: 20px;
+  line-height: 46px;
+  padding: 0px 21px;
+}
+
+#header #search-header:hover {
+  background-color: #f44336;
+  cursor: pointer;
+}
+
 #slider {
+  height: 10000px;
+  background-color: gray;
+  margin-top: 46px;
 }
 
 #container {
