@@ -28,6 +28,7 @@ html {
   top: 0;
   right: 0;
   left: 0;
+  z-index: 9999;
 }
 
 #nav {
@@ -94,9 +95,23 @@ html {
 }
 
 #slider {
-  height: 10000px;
-  background-color: gray;
-  margin-top: 46px;
+  position: relative;
+  padding-top: 50%;
+  background: url("/assets/img/slider/slider1.jpg") top center / cover no-repeat;
+}
+
+#slider #text-slider {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  padding: 32px;
+}
+
+#slider #text-slider h2 {
+  padding-bottom: 32px;
+  font-weight: 500;
 }
 
 #container {
