@@ -9,6 +9,10 @@ html {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.text-white {
+  color: #fff !important;
+}
+
 /* 
 
 1.Vị trí
@@ -28,7 +32,7 @@ html {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 9999;
+  z-index: 1;
 }
 
 #nav {
@@ -117,5 +121,176 @@ html {
 #container {
 }
 
+#container .content-section {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 64px 0px;
+}
+
+#container .content-section .heading-title {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 0px;
+  font-size: 30px;
+  letter-spacing: 4px;
+  font-weight: 500;
+}
+
+#container .content-section .description-title {
+  text-align: center;
+  padding: 10px 0px;
+  font-size: 15px;
+  font-style: italic;
+  opacity: 0.5;
+}
+
+#container .content-section .about-text {
+  margin-top: 15px;
+  text-align: justify;
+  line-height: 1.4;
+}
+
+#container .member-team {
+  display: flex;
+  justify-content: space-between;
+}
+
+#container .member {
+  padding: 32px 0;
+}
+
+#container .member .member-name {
+  text-align: center;
+  margin: 15px 0;
+}
+
+#container .member .section-img {
+  display: flex;
+  justify-content: center;
+}
+
+#container .member .section-img .member-img {
+  width: 60%;
+}
+
+.tour-section {
+  background-color: #000;
+}
+
+.tour-section .month-list {
+  background-color: #fff;
+  margin-top: 24px;
+}
+
+.tour-section .month-list li {
+  text-transform: capitalize;
+  color: #757575;
+  padding: 8px 16px;
+  border-bottom: 0.5px solid #ddd;
+  list-style-type: none;
+}
+
+.tour-section .month-list .sold-out {
+  display: inline-block;
+  background-color: #f44336;
+  padding: 3px 4px;
+  font-size: 15px;
+  color: #fff;
+  margin-left: 16px;
+}
+
+.tour-section .month-list .badge-quantity {
+  float: right;
+  background-color: #000;
+  padding: 4px 8px;
+  border-radius: 50%;
+  margin-top: -4px;
+  color: #fff;
+}
+
+#sale-place {
+  display: flex;
+  justify-content: space-around;
+  margin: 32px -8px;
+}
+
+#sale-place .place-tickets {
+  margin: 0px 8px;
+  background-color: #fff;
+}
+
+#sale-place .place-tickets .place-img {
+  width: 100%;
+}
+
+#sale-place .place-tickets .place-body {
+  padding: 16px;
+}
+
+#sale-place .place-tickets .name-place {
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#sale-place .place-tickets .date-sale {
+  opacity: 0.7;
+  margin: 15px 0;
+}
+
+#sale-place .place-tickets .descrip-place {
+}
+
+#sale-place .place-tickets .button-buy {
+  margin: 15px 0;
+  padding: 12px;
+  color: #fff;
+  background-color: #000;
+  display: inline-block;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+#sale-place .place-tickets .button-buy:hover {
+  background-color: #ccc;
+  cursor: pointer;
+  color: #000;
+}
+
 #footer {
+}
+
+#modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#modal-container {
+}
+
+#exit-modal {
+}
+
+#header-modal {
+}
+
+#body-modal {
+}
+
+#body-modal .input-modal {
+}
+
+#body-modal button {
+}
+
+#help-modal {
 }
