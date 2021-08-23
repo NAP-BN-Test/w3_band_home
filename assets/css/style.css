@@ -6,11 +6,24 @@
 }
 
 html {
+  scroll-behavior: smooth;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .text-white {
   color: #fff !important;
+}
+
+.btn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #ccc;
+  cursor: pointer;
+  color: #000;
 }
 
 /* 
@@ -125,7 +138,7 @@ html {
   width: 800px;
   margin-left: auto;
   margin-right: auto;
-  padding: 64px 0px;
+  padding: 64px 0px 112px;
 }
 
 #container .content-section .heading-title {
@@ -245,23 +258,81 @@ html {
 #sale-place .place-tickets .button-buy {
   margin: 15px 0;
   padding: 12px;
-  color: #fff;
-  background-color: #000;
   display: inline-block;
   font-size: 15px;
   text-decoration: none;
 }
 
-#sale-place .place-tickets .button-buy:hover {
-  background-color: #ccc;
-  cursor: pointer;
-  color: #000;
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 32px;
+}
+
+.contact-container .contact-info {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.contact-container .contact-info i[class*="ti-"] {
+  width: 30px;
+  display: inline-block;
+}
+
+.contact-container .contact-from input {
+  padding: 10px;
+  margin-left: 8px;
+}
+
+.contact-container .contact-from .contact-message {
+  margin-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 16px;
+}
+
+.contact-container .contact-from .contact-message input {
+  width: 100%;
+}
+
+.contact-container .contact-from .submit-form {
+  float: right;
+  padding: 12px 18px;
+}
+
+.map-img {
+  width: 100%;
 }
 
 #footer {
+  text-align: center;
+  padding: 64px;
+  color: #000;
+  text-decoration: none;
 }
 
-#modal {
+#footer .socials-list a {
+  text-decoration: none;
+}
+
+#footer i {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 24px;
+  letter-spacing: 4px;
+}
+
+#footer i:hover {
+  color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+#footer .copyright,
+a {
+  color: rgba(0, 0, 0, 0.6);
+  padding-top: 16px;
+  font-size: 14px;
+}
+
+.modal {
   position: fixed;
   top: 0;
   right: 0;
@@ -269,19 +340,26 @@ html {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 2;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
 }
 
+.open {
+  display: flex;
+}
+
 #modal-container {
   width: 900px;
+  max-width: calc(100% - 32px);
   background-color: #fff;
   min-height: 200px;
   position: relative;
+  animation: modalFadeIn ease 0.5s;
 }
 
 #modal-container i {
+  margin-right: 5px;
 }
 
 #exit-modal {
@@ -317,13 +395,44 @@ html {
 
 #body-modal .input-modal {
   width: 100%;
-  padding: 8px;
+  padding: 16px;
   margin-top: 10px;
   margin-bottom: 24px;
 }
 
-#body-modal button {
+#body-modal #pay {
+  width: 100%;
+  padding: 16px;
+  background-color: #009688;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+#body-modal #pay:hover {
+  opacity: 0.9;
+  cursor: pointer;
 }
 
 #help-modal {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px;
+}
+
+#help-modal a {
+  padding-left: 5px;
+  color: #2196f3;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

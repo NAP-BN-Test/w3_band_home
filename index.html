@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>The Band</title>
+    <link rel="icon" href="/assets/img/108948_media_512x512.png" type="image/x-icon" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link
       rel="stylesheet"
@@ -16,19 +17,19 @@
       <div id="header">
         <!-- Begin NAV -->
         <ul id="nav">
-          <li><a href="">home</a></li>
-          <li><a href="">band</a></li>
-          <li><a href="">tour</a></li>
-          <li><a href="">contact</a></li>
+          <li><a href="#">home</a></li>
+          <li><a href="#band">band</a></li>
+          <li><a href="#tour">tour</a></li>
+          <li><a href="#contact">contact</a></li>
           <li>
-            <a href=""
+            <a href="#"
               >more
               <i class="ti-angle-down"></i>
             </a>
             <ul id="subnav">
-              <li><a href="">merchandise</a></li>
-              <li><a href="">extras</a></li>
-              <li><a href="">media</a></li>
+              <li><a href="#">merchandise</a></li>
+              <li><a href="#">extras</a></li>
+              <li><a href="#">media</a></li>
             </ul>
           </li>
         </ul>
@@ -49,7 +50,7 @@
         </div>
       </div>
       <div id="container">
-        <div class="content-section">
+        <div class="content-section" id="band">
           <h2 class="heading-title">the band</h2>
           <p class="description-title">We love music</p>
           <p class="about-text">
@@ -99,7 +100,7 @@
           </div>
         </div>
 
-        <div class="tour-section">
+        <div class="tour-section" id="tour">
           <div class="content-section">
             <p class="heading-title text-white">TOUR DATES</p>
             <p class="description-title text-white">
@@ -132,68 +133,123 @@
                   <p class="descrip-place">
                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                   </p>
-                  <a class="button-buy" href="#">Buy Tickets</a>
+                  <button class="btn button-buy js-buy-tickets">Buy Tickets</button>
                 </div>
               </div>
               <div class="place-tickets">
                 <img
-                  src="/assets/img/place/newyork.jpg"
+                  src="/assets/img/place/paris.jpg"
                   alt=""
                   class="place-img"
                 />
                 <div class="place-body">
-                  <h3 class="name-place">new york</h3>
-                  <p class="date-sale">Fri 27 Nov 2016</p>
+                  <h3 class="name-place">paris</h3>
+                  <p class="date-sale">Sat 28 Nov 2016</p>
                   <p class="descrip-place">
                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                   </p>
-                  <a class="button-buy" href="#">Buy Tickets</a>
+                  <button class="btn button-buy js-buy-tickets">Buy Tickets</button>
                 </div>
               </div>
               <div class="place-tickets">
                 <img
-                  src="/assets/img/place/newyork.jpg"
+                  src="/assets/img/place/sanfran.jpg"
                   alt=""
                   class="place-img"
                 />
                 <div class="place-body">
-                  <h3 class="name-place">new york</h3>
-                  <p class="date-sale">Fri 27 Nov 2016</p>
+                  <h3 class="name-place">san francisco</h3>
+                  <p class="date-sale">Sun 29 Nov 2016</p>
                   <p class="descrip-place">
                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                   </p>
-                  <a class="button-buy" href="#">Buy Tickets</a>
+                  <button class="btn button-buy js-buy-tickets">Buy Tickets</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="content-section">
+        <div class="content-section" id="contact">
           <p class="heading-title">CONTACT</p>
           <p class="description-title">Fan? Drop a note!</p>
+          <div class="contact-container">
+            <div class="contact-info">
+              <p class="sub-info"><i class="ti-location-pin"></i>Chicago, US</p>
+              <p class="sub-info"><i class="ti-mobile"></i>Phone: +00 151515</p>
+              <p class="sub-info"><i class="ti-email"></i>Email: mail@mail.com</p>
+            </div>
+            <div class="contact-from">
+              <form action="">
+                <div class="contact-name-email">
+                  <input type="text" name="" required placeholder="Name" id="">
+                  <input type="email" name="" required placeholder="Email" id="">
+                </div>
+                <div class="contact-message">
+                  <input type="text" name="" required placeholder="Message" id="">
+                </div>
+                <input class="btn submit-form" type="submit" name="" value="SEND" id="">
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-section">
+          <img src="/assets/img/map/map.jpg" alt="" class="map-img">
         </div>
       </div>
-      <div id="footer"></div>
+      <div id="footer">
+        <div class="socials-list">
+          <a href=""><i class="ti-facebook"></i></a>
+          <a href=""><i class="ti-instagram"></i></a>
+          <a href=""><i class="ti-linkedin"></i></a>
+          <a href=""><i class="ti-youtube"></i></a>
+          <a href=""><i class="ti-twitter"></i></a>
+          <a href=""><i class="ti-pinterest"></i></a>
+          <a href=""><i class="ti-tumblr"></i></a>
+        </div>
+        <p class="copyright">Powered by <a href="" class="link-w3">w3.css</a></p>
+      </div>
     </div>
 
-    <div id="modal">
-      <div id="modal-container">
-        <div id="exit-modal"><i class="ti-close"></i></div>
+    <div class="modal js-modal">
+      <div id="modal-container" class="js-modal-container">
+        <div id="exit-modal" class="js-modal-close"><i class="ti-close"></i></div>
         <div id="header-modal">
-          <i class="ti-bag">Tickets</i>
+          <i class="ti-bag"></i>Tickets
         </div>
         <div id="body-modal">
           <label for="quality-input"
-            ><i class="ti-shopping-cart"></i>,$15 per person</i></i
+            ><i class="ti-shopping-cart"></i>Tickets,$15 per person</i></i
           ></label>
           <input type="text" id="quality-input" class="input-modal" placeholder="How many?"/>
           <label for="email-modal"><i class="ti-user"></i>Send To</label>
           <input type="text" id="email-modal" class="input-modal" placeholder="Send email"/>
+          <button id="pay">pay <i class="ti-check"></i></button>
         </div>
-        <button id="pay">pay <i class="ti-check"></i></button>
-        <div id="help-modal">Need <a href="#">help?</a></div>
+        <div id="help-modal">Need<a href="#">help?</a></div>
       </div>
     </div>
+
+    <script>
+      const buyBtns = document.querySelectorAll('.js-buy-tickets')
+      const modal = document.querySelector('.js-modal')
+      const modalClose = document.querySelector('.js-modal-close')
+      const modalContainer = document.querySelector('.js-modal-container')
+      function showModalBuy(){
+        modal.classList.add('open')
+      }
+      function hideModalBuy(){       
+         modal.classList.remove('open')
+      }
+      for(const buyBtn of buyBtns){
+        buyBtn.addEventListener('click',showModalBuy)
+      }
+      modalClose.addEventListener('click', hideModalBuy)
+      modal.addEventListener('click', hideModalBuy)
+      modalContainer.addEventListener('click',function(event){
+        event.stopPropagation()
+      })
+    </script>
   </body>
 </html>
