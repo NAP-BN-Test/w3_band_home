@@ -275,18 +275,51 @@ html {
 }
 
 #modal-container {
+  width: 900px;
+  background-color: #fff;
+  min-height: 200px;
+  position: relative;
+}
+
+#modal-container i {
 }
 
 #exit-modal {
+  position: absolute;
+  background-color: #009688;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  opacity: 0.8;
+  color: #fff;
+}
+
+#exit-modal:hover {
+  opacity: 1;
+  cursor: pointer;
 }
 
 #header-modal {
+  text-align: center;
+  padding: 24px;
+  background-color: #009688;
+  color: #fff;
+  letter-spacing: 6px;
+  font-size: 30px;
 }
 
 #body-modal {
+  padding: 16px;
+}
+
+#body-modal label {
 }
 
 #body-modal .input-modal {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  margin-bottom: 24px;
 }
 
 #body-modal button {
