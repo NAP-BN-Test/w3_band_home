@@ -136,9 +136,10 @@ html {
 
 #container .content-section {
   width: 800px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding: 64px 0px 112px;
+  padding: 64px 16px 112px;
 }
 
 #container .content-section .heading-title {
