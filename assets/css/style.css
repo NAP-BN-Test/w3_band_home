@@ -66,13 +66,13 @@ html {
 }
 
 #nav > li:hover > a,
-#subnav > li:hover > a {
+.subnav > li:hover > a {
   color: #000;
   background-color: #ccc;
   display: block;
 }
 
-#nav #subnav {
+#nav .subnav {
   display: none;
   position: absolute;
   background-color: #fff;
@@ -80,16 +80,16 @@ html {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-#nav #subnav li {
+#nav .subnav li {
   display: block;
   min-width: 160px;
 }
 
-#nav > li:hover > #subnav {
+#nav > li:hover > .subnav {
   display: block;
 }
 
-#nav #subnav a {
+#nav .subnav a {
   color: #000;
   text-transform: capitalize;
   padding: 0px 16px;
@@ -108,6 +108,26 @@ html {
 
 #header #search-header:hover {
   background-color: #f44336;
+  cursor: pointer;
+}
+
+#header #mobile-menu-header {
+  display: none;
+  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#header #mobile-menu-header .menu-icon {
+  color: #fff;
+  font-size: 20px;
+  line-height: 46px;
+  padding: 0px 21px;
+}
+
+#header #mobile-menu-header:hover {
+  background-color: #ccc;
   cursor: pointer;
 }
 
