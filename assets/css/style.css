@@ -18,6 +18,7 @@ html {
   background-color: #000;
   color: #fff;
   border: none;
+  -webkit-appearance: none;
 }
 
 .btn:hover {
@@ -144,6 +145,7 @@ html {
   text-align: center;
   color: #fff;
   padding: 32px;
+  text-shadow: 0 0 1px;
 }
 
 #slider #text-slider h2 {

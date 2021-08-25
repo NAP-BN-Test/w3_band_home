@@ -11,6 +11,10 @@
 }
 
 @media (max-width: 740px) {
+  .s-mt-8 {
+    margin-top: 8px !important;
+  }
+
   #header {
     overflow: hidden;
   }
@@ -36,7 +40,6 @@
   }
 
   #nav .subnav {
-    display: block;
     position: relative;
     padding-left: 24px;
     background-color: #333;
@@ -44,5 +47,39 @@
 
   #nav .subnav a {
     color: #fff;
+  }
+
+  #container .member-team {
+    display: block;
+  }
+
+  #sale-place {
+    display: block;
+  }
+
+  #sale-place .place-tickets {
+    margin: 16px 8px;
+  }
+
+  #sale-place .place-tickets .button-buy {
+    width: 100%;
+  }
+
+  .contact-container {
+    display: block;
+  }
+
+  .contact-container .contact-info {
+    margin-bottom: 16px;
+  }
+
+  .contact-container .contact-from input {
+    margin-left: 0;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .contact-container .contact-from .contact-message {
+    margin-right: 0;
   }
 }
